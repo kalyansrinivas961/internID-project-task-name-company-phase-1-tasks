@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Landing Page</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('https://th.bing.com/th/id/OIP.TtVYwKaYqINV30_tPHY8gQAAAA?rs=1&pid=ImgDetMain'); /* Add background image for the entire page */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      margin: 0;
+      padding:0;
+    }
+    .header {
+	  background-image:url('https://wallpapers.com/images/hd/surreal-vista-of-a-bustling-urban-skyline-in-4k-resolution-eae11l38l12zh2qw.jpg');
+    background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+      color: clack;
+      padding: 100px 0;
+      text-align: center;
+      height: auto;
+      width: 100%;
+    }
+    .features {
+      padding: 50px 0;
+    }
+    .feature {
+      text-align: center;
+    }
+    .footer {
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #ffffff;
+      padding: 30px 0;
+      text-align: center;
+    }
+	*,
+	*::before,
+	*::after {
+	box-sizing: border-box;
+	}
+
+	.main {
+	max-width: 1200px;
+	margin: 0 auto;
+	}
+
+	.cards {
+	display: grid;
+	grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	}
+
+	.cards_item {
+	display: flex;
+	padding: 1rem;
+	}
+
+	.card_image {
+	height: calc(13*1.2rem);
+	padding: 1.2rem 1.2rem 0;
+	position:relative;
+	}
+	.card_image:before,
+	.card_image:after{
+		content: "";
+		position: absolute;
+		width: 20px;
+		left: 60%;
+		top: 0;
+		height: 45px;
+		background: #e6e6e6b8;
+		transform: rotate(45deg);
+	}
+	.card_image:after{
+		transform: rotate(-45deg);
+		top:auto;
+		bottom:-22px;
+		left:40%;
+	}
+	.card_image img {
+		width:100%;
+		height:100%;
+		object-fit:cover;
+	}
+
+	.cards_item {
+		filter:drop-shadow(0 0 5px rgba(0, 0, 0, 0.25));
+	}
+	.card {
+		background-color: white;
+		border-radius: 0.25rem;
+		display: flex;
+		flex-direction: column;
+		overflow: hidden;
+		padding-left: 30px;
+		background: repeating-linear-gradient(#0000 0 calc(1.2rem - 1px),#66afe1 0 1.2rem) right bottom /100% 100%,linear-gradient(red 0 0) 30px 0/2px 100% #fff;
+		background-repeat: no-repeat;
+		line-height: 1.2rem;
+	}
+
+	.card_content {
+		padding: 1.2rem;
+	}
+
+	h2.card_title,p {
+		margin: 1.2rem 0;
+	}
+	h2.card_title {
+		font-size: 1.3em;
+		font-family: cooper black;
+	}
+	body {
+		font-family:monospace;
+	}
+
+	html {
+		font-size:15px;
+	}
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <section class="header">
+    <div class="container-fluid" style="width: clamp(100px,50%,300px);">
+      <h1>skillRAAce</h1>
+      <p>A ONLINE BASED INTERNSHIP</p>
+      <a href="#" class="btn btn-primary btn-lg">Sign Up</a>
+    </div>
+  </section>
+  
+  
+  <div class="main">
+  <ul class="cards">
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_content">
+        <div class="card_image"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhISEBMVEBMVFhMXExYYExMXGRIYFRUWGRYXFRgaHiggGBolHxkZITEhJSorLi4uGh8zODMwNygtLisBCgoKDg0OGxAQGjUlHiUtLzUtLS03Ly01LS0tMC0tLS03LS0tLS8tLS0tNTItLS0yLSstLS0tLS0tLS0tLi0vLv/AABEIAMIBAwMBIgACEQEDEQH/xAAcAAEAAwEBAQEBAAAAAAAAAAAABQYHBAMCAQj/xABREAABAwIEAgYEBwcRCQAAAAABAAIDBBEFEiExBkEHEyJRYXEygZHBFBUjUlOh0SRCcoKTlLEzNENEY2VzhJKVorKzwsPS1BclVWJkhcTT8P/EABkBAQADAQEAAAAAAAAAAAAAAAACAwQFAf/EACERAQADAAIBBQEBAAAAAAAAAAABAhEDITESEzJBYSIE/9oADAMBAAIRAxEAPwDcUREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBc9dWxwszyuDGXaLm9rucGt9pIC6FX+PY81BUDwZ/aMQStJicMocYpY5Ay2fK9rslwSM1jpsd1xUXE9JLL1MUwdJci2V4uQ3MQHEWJtrvsQs76MiXRYq6wGaPKAP+RkgHqsQAPBQmGVRhfhMkTcxysfkvbMA6obIQL2zlj7X8BfZBtmI4lFA0OmeIwTlbe93GxNmgak2BNhyBUc/i6jDGyOmysdnsTHKD8nlzkgtuAMzdSLdod6hekiRroKaUFrmNlhkudWuY6WJrvUWPd7VWuFeEZamjp5I52RPZ1mjoy8ESiN4AcHNLbC2g8O5BejxvQbmpYLb3Dxyv3eK/aXjbD5HZWVcTjZxtcjRrS5245BpPqKxvH6aopKmWF8okyvZ2hGwZ3SQhzQ0PD8ugy38CtEbwLK10cpmDjFnOoacwcxzXCzGMFyHHe9kFii4xonGzJS/TNdsM7gRmLTYhliQQQQNRZeEnHVE05XSSNPjTVLb+AuwXPgsz4Bw4Vc4gle9jW0+fRsLrkNpc7SJGOG77kgb+avMnRdRuBDnyncaNpWWv3ZIW+1BMYnxlSQSNile8PdHHK0CGV3Ykf1bT2Wm3aIFt9Qo2LpPw0uLTM5vi6GYA/0dPXZUvpciDqssaNW0kduXZ67T3r8b0du+AMrIZgX9R12QwtGYOjzlriXOBtfYix8NwGv0FdHMwSQvbIx2zmm48R4HwKjqvimkik6mSYCTmMrzbXLq4AgAHTU6EFZ/wBF+LhlQyBrhllj7TQXEB7A7KWk65QGOAJ1s9jdmBQ3FLcorso7bquRu9s33Q42PeNWnX5oPJBttVUsjY6SRwYxoJc5xADQNySuPDMbgqHPbC8vLMua7JG2zC4sXAX07u8d6hsSqvhWGEuAa6QRMkA2a4yMa+3hrcHmCDzVJ4IrurixGqY4NLoY2ttsJI4Yg55HeXyAnvsEF14g4/pKV/V9ueQEgiMNysLfSDpHlrARpcXJFxcarywrpDp5XRtkjlphKS2OR3VPie64GXrInuDXXIFnW3HeFnfDnDLKqfqNSxvVOc5z76GMSyZWi2xlYze3azEOJ7PVxLw0yiqmtjOZpYHhlyWygyCMZmk7sc4OJ0FraDVBslVVMjaXyubG0WF3EAXJsB5kmy8sPxOGcF0EscwFrlj2utcXF7HTTVU/iaTrcIbISXGMhwcTqXQucGuJ77tB81z9EL7sn0AytpWkAWt8kXWHgMwQXaTFoGydU6aISXa3IZG5rv8ARFr3ueQ5ryqMfpY3PZJPHG6OweHvDct2tcNXWB0c06d6y3HqIDFWzagisiLhfS7ZaftAciWua38ULw6W4b1UjRb5bqmeRMY18rhht3sHcg1HiHimloiwVMhYXhxaAx7zZtrk5QbDUC571GU3SRhz3AdeYw70XSRSxsd5Oc0D2qqdKNL1klNIdxSy9n8Jjv8A71LkqOEJhQsqoZxLDlMxiLXfqbu0TbP1cgA1ylguL2IKDYY5A4BzSHNIuCCCCO8Ebr6WVdEmKuZPLRG7YnNdLGw3Ihe1wErGE65SHNcAdbWvqSTqqAiIgIiICIiAiIgKE40H3HMP4P8AtWKbUJxm8CkkJ2GU+wgoKR0WR2p693zzKfZnGizmZ0tqbIdWUrXAX1DbZ3W9RB05ArSejYBtJKO6ncT5mKJxP1qo8DYeaieMaXdRvjYDsHxRRAX8DpfwcRzQTHEGMiXCXtJ7UeVtjvlkkp5GachYlv4ivXRmzLRMbzHVg+qCFYxWAHNE4lgEWU8s1qiN7Q5vziC51/3QDlruHAv62cf3acDyZIWD6moM06Tz92VlvSa2It8/gVXb6w1bNPLaNz+5hdbyF1j/AEiU+atrc2oLYfZ8DqB+k/WtXxt5bS1BG4hlI9UZQZdwDURUstLLM7IH0tQ1xyuPbAw75oPzXG60uHiakcWhtQy7nNa0E2zOcQGgX3JJAWX0mCSVclPBDI2FzBVyFxz7B1G0AZHNdvrvyVhwzo4kbVQ1M9Q2XqnteAGuvduupJJdrZBC9KQ+7JXf9GbeTZYj7ypZvHFNFhccbHiedtJExzG2IjcYwz5Q7AA6EbqI6WZbVcjbftJxJ/ClYP7n1quY1ww6CnpnOcZGzQSyjV1onx5XODWk21YTfnZhOljcJjo5hfPXxzNjyNbmP4lr6+A7DQOecnkQovjMyOqJwwj9fzMA03IiczfTcnfwWrdG8cJoYZYQA6Ro606Xzsu1zNAAGtIIAA213JJy/FWiTE3sIBaMRLnA7ODpqeJwPhqB6ygmeDcb+5ZIJSQ68T9d80NRE2S/jldFp3DwXj0YYUZ8Pq4dMzw8x32zBsWW/hmY1RXEcBp6l8TibicPDr2JvmIvyOa+Z23psHJXfoljDRK1pzNbFTa95eHkkedkFO4NxuSlqGObCagmMRyxsc0yMLWMjcACdXHqI+ybHM1zdCQr78aYTib2NnaDLrGxsrXsddwzFjXA5S42OgdfsnuUlj3BtDWuc6RuWXnJE/K/uu62jj+ECsq41w6WmmZTVLvhAd1fV1GokfCXWDJT9+9jm3DjqO+zrANI4/oo4MHnijBaxjYw3UuOsrdyTc3J1J71E9F9fBE2dr5Y2ZuqDM0jG58jXA5bnWwtso/47fV4DI17+smjfTRPcfviZYSwnvIDg0nmWuVd4W4PnrI2yxdWQGWLXyOZc9fUNvbq3g+h4IJTG6sPxDMxwezr5CC0ghwDqLKQRvq13sXR0lw9ZXRR83Txjx0jj2/lKuR0TqaqpKZ5aZGyhkmW+UZqpmxOpGm9grXxhb41jPzZWn1uOHNHv9qB0kPzObbc01OG+GcVZP8AVCtrqtkGEx5yDemaxoOmdzorW8tyTyAJ2CovHUjWupiT6VPQNPkYq8fXdRtDwLXVIDuqsx9zHK+VpaGEhzQ1gdeNp0J7LiSL6XuglujZjZcRZNGQGNgmLrC2aV7o3SG3KwljbfvZYbLYFWuC+EY6FhtZ0rw0PcByaSbXOp1cSTz00AAAsqAiIgIiICIiAiIgKv8AHo+4Km2+UW8CXAe9WBR3EGHmenkhaQC7LbNexyva6zra2NretBnfCLurpsQYf2Om0tzDqdjW29cblFdEH66ibbZtY4nvJbSWt4WcFasB4IqYqarhlmjEk0McUcjM5y9WZCHOBA17QGncuzgXgp9C9z5ZWSnK9rcrXCweYr3uToBEwD1oM56UcPFPXPIBtIwSDucDK0nXvDswtyAYtR6N6oSUQeBlvNUEi97EyuLrHmLk2PdZeXSBwga9sWQta9mcXcSLB5YeTTf0NtN99FI8GYNJSUwhlcxzg4kdWHBobYBoGbXYIM+48c01VeCPR+Dk+N4ctvLtLUMbbemnB+hlH9Aql8T9HstVVz1DahsbJQwZMhJOSNrRmN9rgnRX6oiD2OYdnNLT6xZBk/AeLRsr5HTSMgYyGVl5HtaC+SSBwFybXsw6LTBjlKbAVMBJ0b8tHr5a6rPKXo+rGBxzUz5HuzPdmla2wZlDQ3ITvc3uvL/Z5WvkiEraPqesaZQ10tyy4zZbt1da9ttbIOPpdkAriCfSoCLePWvI/QfYp7F6cyYNRVNrugFPUnX723ygJ+ble6/hddnHHBElZUMnjcxto+rcHl2gtLsA03N3t1uNARzuLNg+FCOjipZcrw2FsTxrlcMuVw15FBTejGpbFLLSNPycjevp/FoORx83DI+w5EKl0JviszrF2erise4Prqd9vZZXHCOj2pp6iCaOpjcyB7uraWvDnxOJaWvdci+TK30T6DbW3Xrw50dzU9SJpahkzRIH2yODjlvbna5IYT3ZdEEb004cAaepA9J4YTbYgEi/i4Df9zHeonhardJhuJMiGWQU9O0nNplIc0m42Ns5PctT4uwX4ZSvg0uSxzSSRYseHbgG1wCL2O6guA+DJKLrxM6KVkjGsDWh2oD5XHrM2jv1TLoBoAgonBWNtoKpznQnqJWOt1TbuAe8SMdlNi8BnZIFyMrh96QuXpT4mhrJovgxLmRssXFrmkuJvazgHAAW8yfBWniHoxmJHwOZhiBc5sUtx1ZdvldlcHA8wQL7m5uT54N0TOJb8OlaWN/Y4nPJ3uQHmwa09wbsd72IDiwSnyYOZS3I188RbfTO2GV0uby3H4qsfQ4SaNpPJgb7J6k+9TnGnDj6qkbTU7mQhrmGxBDcjWubkFgcuh7uS/OB+HZKKLq5HMNgGtDMxFhJK8uJcBqTIRbuaEGX8Qn/AH0OYNbEweGaSm97j7VN8dty4hJLyj6l5HOwloy8/wAli6sZ4Bq5cTdVxuibCKiCVgdI+5DDCX9kMIBuxx3102UjxxwTU1czpKeWJgfHJG7PnBGdjG3GUG9ixrhtzQVjpEpLupweUGHbbnWqYfZmC1XhwfclN/Axf1Aq/wAW8GGrdG5jwwsYxrbl1gY3OLSWgdr0uZ5eKsuD0z44Io5C1z2Ma1xaCAS0WuAdUHYipvG3EEkEjI23a0tuSOZJ2v5Lhwzixw55vA3VU8sROL6/57WrsNARR1DizX7jKeYvdRg4pa6odDHlIYbHXUkb+QUp5Kw8rwXtORCyIvljrgEc19KakREQEREEfjxd8Hm6tkkrshysjk6t7ifmPuMp8brFKPBcaD2GcYi5gIzhtU4uIHdeS3tW9ogyCeOvtaOmxTwvU5f0PK4ZKHFj6LMTb/Hn/wCVbaiDDPi3Ght8YeuskPuXvDDjQPajrXDv+Ey/atsRBjw+NecVb+cTr9DsU+hrfy9QtgRBkOfFPoa38tUfYv3Pif0dd+Vn/wAq11EGSCTEvmV/8qY/3V+/CMS7q/2SH/DWtIgyN1diQ/4h+SkP+AV5OxTEv3y/N5f9OthRBjfxtiX76fm0n+lX4cUxLvxQfxV/+mWyogxn4xxP6TFPzN5/8dfDsSxP6bEx/EJD/gLaUQYn8aYn9Pif83Sf+sL6OI4pa/XYkf8Atxv7LXW1IgxB2K4r9Jiv82lfAxfFr26zFB54eB9ZK3JEGHOxXF/pcQ9dHGPevGox/FWNzPlrmgczDE0f1St1e8AEk2AFye4BULjHEROCxt8tuz573Pnso2tkJ8dJvOMtr8brZtZHzv8AwsnuYFyRVtVmAHXZnaAZbk+AGQ39SlocTyuMbxle3cHcfaPFetU9zgHMJuCC0g2LSNiDyKo93fprjhmPtETY/WxF8b5ZoCW6tcMjiHaXF2hw566KKpJ5GSxvgceta5pZlBu439Gw1N9rc7rt4goK2rqDVTAvJa278mlmADtNGw0vcabrq4WnY2oiBy5zlcMrTq3Qh1zbQ6bb99tDZW9YrKv2uS14j7f0Th04LQOa7VA4a6+S3eFPKXHbYV89PTYREU1IiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIvl+xt3IILiXEmdW6IG7tMwB9HnY/Ys0mxIichxGU2De71Lxx6SqJcIS0gk3u6xPrVXbhlW94GZjST3l3uCyXt6nR4qejpc8WwWOqaPvJB6DxuD4948FVonS00wiqRbW4P3sgHNv2KwR0dVRtD5Plo93OYDdn4Td7eIv6l31ctPXQ5H6nQtcDq08i0quV0QmMHq2uy5bC/sXHifCTevbUxklhtnYdch2BZf0WbdnYHbfSt04mpJOplu4EfJSAdl45A9zloWC1OaMBwtmFrHvIUozMlKa5EWhN4LABlAFgAppR2Gixt3D3hSK08cdOZzztxERWKRERAREQEREBERAREQEREBERAREQEREBERAREQFEcWPcKScx+llt6iQHfVdS6j+IIy6mmA1JY6y8t4Sp8oYpUVWXsjfmuZksmZrgDYEH2Luw2gL3FxHPn9q7MQY5jexv38h9pWCfDq1r2sOE4sHtFzquDF+GGlxnoyIpN3R7Mk9nou8RoefeuvC8OZJTlxGWVgF3A223vyOi4RiLoZzG8mzS3KfnNIBB/SPUvd67e5307MJr83ycrcssY1Y4C4Pv8AAjdWzD5WvaDYHwUdPS09R1crh226ZhuAeRtuFJ0tMI+y3bzurqRMR+IXtEx+pWgbv6l2LloRofNdSvr4c3k+UiIikgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAviZl2kd4IX2iDH4JAypljIF2vcBoNBfRWL4E2TKD5qH45w90NX1rB2X2P2qXwSrva+9llmMnHUpba7CTw2iDM45HT6rKv8T4ZcxyN3ALXeIBuD6v0Eq4MdouSup8zR4G/uUbVjHtbTqsUQc3KWki+4VoonaC6jhR7WFlO4NT9q52G3mpUjtDltkalaaPK0A7816oi1OdM7OiIiPBERAREQEREBERAREQEREBERAREQEREBERAREQEREEPxPhAqIS0em3Vn2LNsJe6KVzX+le3kFsKp3GeB/tiLQ/fj3qrkrvbTwcmTkvamqLgLsab7KsYbU6WOhU1QyeKoidbLeHQ9mqlMI2d6veo1xuVJYT9/wCYVtPLPy/CUgiIr2IREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQF4V0YdG9p5tK918TeifIo9jyycT9XM5h2J0Vmw8cwqXxI4tqWnxCt2EPu0LJPUulHcJld+EHVw8veo8FdGFy2k8wR7/cpVn+oV8ldpKbREWlgEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBfjhoURBB1eE07nXfBE495iYT9YXVT0UQHZjYPJjR7kRQmIWeqXQIG/Nb7Av1kLQQQ1oPkERMNl1IiKasREQf/2Q==" alt="internship"></div>
+          <h2 class="card_title">INTERNSHIP</h2>
+          <div class="card_text">
+            <p>Internships are short-term opportunities to gain entry-level work experience. Interns usually work alongside a specific team within a company, learning from seasoned professionals and trying out different aspects of the job. Rather than leading their own projects, interns usually complete smaller tasks to support larger organizational initiatives.
+College students and recent grads typically fill intern positions, though some are open to people already in the workforce. Internships offer a chance to gain experience in a new field before applying for a full-time position.</p>
+            <p> Finding a career after college can be overwhelming, especially if you don’t have professional experience. You can only learn so much about an industry from the outside, so it’s often difficult for newbies to a full-time role. By completing an internship during college, however, you can graduate equipped with on-the-job expertise and insider knowledge. </p>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1lM6tV4xguyxFlfCEQso7uODtRxsZib_1Mg&s" alt="SOFTWARE EMPLOYEMENT"></div>
+        <div class="card_content">
+          <h2 class="card_title">SOFTWARE EMPLOYEMENT</h2>
+          <div class="card_text">
+            <p> Software engineers design and develop computer programs and applications. Strong demand for skilled software engineers means that professionals can pursue many employment options in various industries.</p>
+            <p>Software engineers create web applications, mobile apps, robots, operating systems, and network systems. They develop software solutions that meet their companies' needs and expectations. Note that the terms "software engineer" and "software developer" are used interchangeably in the industry, but these positions' responsibilities vary slightly.Software engineers design software solutions, while software developers build those solutions to make them ready for consumers. Depending on the type of company they work for, software engineers will create original code for software and applications. They also build reusable code for future use.</p>
+          </div>
+        </div>
+      </div>
+    </li>
+  <!-- Footer Section 
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Your Company. All rights reserved.</p>
+    </div>
+  </footer>-->
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
